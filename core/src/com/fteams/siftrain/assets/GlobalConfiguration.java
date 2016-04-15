@@ -9,21 +9,27 @@ public class GlobalConfiguration {
     // package info
     public static String appVersionName;
 
+    // audio config
     public static int songVolume;
     public static int feedbackVolume;
+
     // offset in milliseconds
     public static int offset;
     public static int inputOffset;
     public static int noteSpeed;
     public static int overallDifficulty;
+
     // path to beatmaps
     public static String pathToBeatmaps;
     public static boolean playHintSounds;
+
     // sorting related
     public static int sortMode;
     public static int sortOrder;
+
     // randomizer config
     public static int randomMode;
+
     // sync config
     public static int syncMode;
 
@@ -36,7 +42,14 @@ public class GlobalConfiguration {
     public static Float aTime;
     public static Float bTime;
 
+    // miscellaneous config
     public final static int BASE_HEIGHT = 720;
+
+    // TODO extra features
+    public static boolean songPreviews;
+    public static boolean deferredSongLoading;
+    public static int useAlternateWorldController;
+
 
     public static void loadConfiguration() {
         Preferences prefs = Gdx.app.getPreferences("sif_train_config");

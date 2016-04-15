@@ -33,7 +33,6 @@ public class Results {
     }
 
     public static Accuracy getAccuracyFor(float timing) {
-        // Perfect
         if (Math.abs(timing) < SongUtils.overallDiffPerfect[GlobalConfiguration.overallDifficulty] / 1000) {
             return Accuracy.PERFECT;
         }

@@ -32,12 +32,10 @@ public class CircleMark implements Comparable<CircleMark> {
             return Float.compare(spawnTime, o.spawnTime);
         }
         return SongUtils.compare(destination, o.destination);
-
     }
 
     public enum Accuracy {
         NONE, MISS, BAD, GOOD, GREAT, PERFECT
-
     }
 
     public boolean visible;
@@ -373,6 +371,7 @@ public class CircleMark implements Comparable<CircleMark> {
         return accuracyEnd;
     }
 
+    // TODO documentation (updateSize, updateSize2)
     private void updateSize(float despawnTime) {
         float progress = (float) ((speed - despawnTime) / speed);
         this.size = 0.1f + progress * 0.9f;

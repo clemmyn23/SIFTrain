@@ -20,7 +20,7 @@ public class SongScreen implements Screen, InputProcessor {
     @Override
     public void show() {
         world = new World();
-        Results.clear();
+        Results.clear();        // TODO test redundancy
         renderer = new WorldRenderer(world);
         controller = new WorldController(world);
         Gdx.input.setInputProcessor(this);
